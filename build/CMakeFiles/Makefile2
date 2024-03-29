@@ -63,6 +63,7 @@ CMAKE_BINARY_DIR = D:\cmkae_project\cmake_planning_test\build
 
 # The main recursive "all" target.
 all: CMakeFiles/planning_main.dir/all
+all: CMakeFiles/common.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -71,21 +72,22 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/planning_main.dir/clean
+clean: CMakeFiles/common.dir/clean
 .PHONY : clean
 
 #=============================================================================
 # Target rules for target CMakeFiles/planning_main.dir
 
 # All Build rule for target.
-CMakeFiles/planning_main.dir/all:
+CMakeFiles/planning_main.dir/all: CMakeFiles/common.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\planning_main.dir\build.make CMakeFiles/planning_main.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\planning_main.dir\build.make CMakeFiles/planning_main.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\cmkae_project\cmake_planning_test\build\CMakeFiles --progress-num=1,2,3,4 "Built target planning_main"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\cmkae_project\cmake_planning_test\build\CMakeFiles --progress-num=4,5 "Built target planning_main"
 .PHONY : CMakeFiles/planning_main.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/planning_main.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start D:\cmkae_project\cmake_planning_test\build\CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\cmkae_project\cmake_planning_test\build\CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/planning_main.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start D:\cmkae_project\cmake_planning_test\build\CMakeFiles 0
 .PHONY : CMakeFiles/planning_main.dir/rule
@@ -98,6 +100,32 @@ planning_main: CMakeFiles/planning_main.dir/rule
 CMakeFiles/planning_main.dir/clean:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\planning_main.dir\build.make CMakeFiles/planning_main.dir/clean
 .PHONY : CMakeFiles/planning_main.dir/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/common.dir
+
+# All Build rule for target.
+CMakeFiles/common.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=D:\cmkae_project\cmake_planning_test\build\CMakeFiles --progress-num=1,2,3 "Built target common"
+.PHONY : CMakeFiles/common.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/common.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\cmkae_project\cmake_planning_test\build\CMakeFiles 3
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\Makefile2 CMakeFiles/common.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start D:\cmkae_project\cmake_planning_test\build\CMakeFiles 0
+.PHONY : CMakeFiles/common.dir/rule
+
+# Convenience name for target.
+common: CMakeFiles/common.dir/rule
+.PHONY : common
+
+# clean rule for target.
+CMakeFiles/common.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\common.dir\build.make CMakeFiles/common.dir/clean
+.PHONY : CMakeFiles/common.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.
